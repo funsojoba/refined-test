@@ -38,6 +38,7 @@ Route::post('register', [RegisterController::class, 'register'])->name('register
 Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('login', [LoginController::class, 'login'])->name('login');
 
+
 Route::get('/quiz/create/{examId}', 'App\Http\Controllers\QuizController@create')->name('quiz.create');
 Route::post('/quiz/store/{examId}', 'App\Http\Controllers\QuizController@store')->name('quiz.store');
 
